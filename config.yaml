@@ -1,0 +1,6 @@
+# Pihole formula config
+
+config:
+
+  webserver:
+    enabled: True
