@@ -4,3 +4,10 @@ config:
 
   webserver:
     enabled: True
+
+cloudflared:
+  # cloudflared creates a DNS proxy running locally which enables DNS over HTTPS
+  # this improves your DNS query privacy.
+  # After enabling, you will have to set your pihole's upstream DNS server to
+  # a custom one with the value: 127.0.0.1#5053
+  enabled: True
