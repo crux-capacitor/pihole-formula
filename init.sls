@@ -3,6 +3,7 @@
 
 include:
   - formula.pihole.service
+  - formula.pihole.gravity-update-cron
 {% if pihole.cloudflared.enabled %}
   - formula.pihole.cloudflared
 {% endif %}
