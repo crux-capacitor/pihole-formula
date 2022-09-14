@@ -1,0 +1,5 @@
+# Enable Blacklisted group every day at 9:30pm
+30 21 * * * sudo pihole_group_mgmt.sh Blacklisted enable; aws sns publish --topic-arn arn:aws:sns:us-east-1:085513949144:HomeAutomationNotifications --message 'blacklist enabled'
+
+# Disable Blacklisted group every day at 6am
+0 6 * * * sudo pihole_group_mgmt.sh Blacklisted disable; aws sns publish --topic-arn arn:aws:sns:us-east-1:085513949144:HomeAutomationNotifications --message 'blacklist disabled'

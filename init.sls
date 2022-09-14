@@ -3,7 +3,10 @@
 
 include:
   - formula.pihole.service
-  - formula.pihole.gravity-update-cron
+  - formula.pihole.cron.gravity-update
+  - formula.pihole.cron.nightly-blacklist
 {% if pihole.cloudflared.enabled %}
   - formula.pihole.cloudflared
 {% endif %}
+
+
